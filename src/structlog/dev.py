@@ -365,7 +365,7 @@ class RichTracebackFormatter:
 
         sio.write("\n")
 
-        Console(file=sio, color_system=self.color_system, width=self.width).print(
+        Console(file=sio, color_system=self.color_system).print(
             Traceback.from_exception(
                 *exc_info,
                 show_locals=self.show_locals,
